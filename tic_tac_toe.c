@@ -56,7 +56,6 @@ int minimax(char* game, int turn, int* next_play) {
 
         play(game, i, turn);
         
-        int useless;
         int future = minimax(game, turn + 1, next_play + 1);
 
         if ((value < future && turn % 2 == 0) || (value > future && turn % 2 == 1)) {
