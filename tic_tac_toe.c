@@ -71,8 +71,7 @@ int minimax(char* game, int turn, int* next_play) {
 
 int main() {
     char game[9];
-    int turn = 0, player = 0;
-
+    
     for (int i = 0; i < 9; ++i)
         game[i] = ' ';
 
